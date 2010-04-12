@@ -1,0 +1,11 @@
+one:
+  scientific_name: MyString
+  basionym_authorship: MyString
+  authorship_year: 2010-04-12 17:26:29
+  basionym_for_id: 1
+
+two:
+  scientific_name: MyString
+  basionym_authorship: MyString
+  authorship_year: 2010-04-12 17:26:29
+  basionym_for_id: 1

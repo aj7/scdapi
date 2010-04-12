@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :taxon_names
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   map.home "home", :controller => "home", :action => "index"

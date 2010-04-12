@@ -1,0 +1,20 @@
+<% form_for @taxon_name do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :scientific_name %><br />
+    <%= f.text_field :scientific_name %>
+  </p>
+  <p>
+    <%= f.label :basionym_authorship %><br />
+    <%= f.text_field :basionym_authorship %>
+  </p>
+  <p>
+    <%= f.label :authorship_year %><br />
+    <%= f.datetime_select :authorship_year %>
+  </p>
+  <p>
+    <%= f.label :basionym_for_id %><br />
+    <%= f.text_field :basionym_for_id %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

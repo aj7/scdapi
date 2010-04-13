@@ -72,7 +72,16 @@
       <file leaf-file-name="taxon_name.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/taxon_name.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.47783932">
+            <state line="19" column="98" selection-start="534" selection-end="534" vertical-scroll-proportion="0.39473686">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="42" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -617,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.4477612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="51" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
@@ -631,9 +633,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="42" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/taxon_name.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.47783932">
+        <state line="19" column="98" selection-start="534" selection-end="534" vertical-scroll-proportion="0.39473686">
           <folding />
         </state>
       </provider>

@@ -12,8 +12,8 @@ class TaxonName < ActiveRecord::Base
   #Relationships
   ###
 
-  belongs_to :BasionymFor , :class_name => 'TaxonName' #TaxonName can be the basionym of another TaxonName
-  has_many :HasBasionyms , :class_name => 'TaxonName' , :foreign_key => :basionym_id #One TaxonName is a basionym for many other TaxonNames
+  belongs_to :basionym , :class_name => 'TaxonName' #TaxonName can be the basionym of another TaxonName
+  has_many :BasionymFors , :class_name => 'TaxonName' , :foreign_key => :basionym_id #One TaxonName is a basionym for many other TaxonNames
 
   ###
   ###   Validations

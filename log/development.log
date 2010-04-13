@@ -390,3 +390,114 @@ Migrating to ActsAsTaggableOnMigration (20100413105209)
 Migrating to CreateTaxonNames (20100412162629)
 Migrating to ActsAsTaggableOnMigration (20100413105209)
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" [0m
+  [4;35;1mTaxonName Load (0.5ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 1) [0m
+  [4;36;1mTaxonName Load (0.5ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;35;1mTaxonName Load (0.4ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTaxonNames (20100412162629)
+Migrating to ActsAsTaggableOnMigration (20100413105209)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTaxonNames (20100412162629)
+Migrating to ActsAsTaggableOnMigration (20100413105209)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTaxonName Load (0.6ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 1) [0m
+  [4;35;1mTaxonName Load (0.9ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;36;1mTaxonName Load (1.1ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 3) [0m
+  [4;35;1mTaxonName Load (0.5ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTaxonName Update (0.7ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = 3, "updated_at" = '2010-04-13 12:36:11.809228' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" [0m
+  [4;35;1mTaxonName Load (0.5ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxonName Update (0.6ms)[0m   [0mUPDATE "taxon_names" SET "basionym_id" = NULL, "updated_at" = '2010-04-13 12:38:05.068345' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTaxonName Load (0.5ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 2) [0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 1) [0m
+  [4;35;1mTaxonName Load (0.3ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 2) [0m
+  [4;36;1mTaxonName Load (1.0ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;35;1mTaxonName Load (0.9ms)[0m   [0mSELECT * FROM "taxon_names" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxonName Update (0.3ms)[0m   [0mUPDATE "taxon_names" SET "basionym_id" = 2, "updated_at" = '2010-04-13 12:46:03.690909' WHERE "id" = 3[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTaxonName Load (1.0ms)[0m   [0mSELECT * FROM "taxon_names" [0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 2) [0m
+  [4;35;1mTaxonName Load (0.4ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 2) [0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 2) [0m
+  [4;35;1mTaxonName Load (0.4ms)[0m   [0mSELECT * FROM "taxon_names" [0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTaxonName Load (1.1ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 4) [0m
+  [4;36;1mTaxonName Load (0.9ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTaxonName Update (0.4ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = NULL, "updated_at" = '2010-04-13 12:51:19.459424' WHERE "id" = 4[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTagging Load (1.8ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 2 AND "taggings".taggable_type = E'TaxonName') [0m
+  [4;36;1mTagging Load (0.9ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 2 AND "taggings".taggable_type = E'TaxonName' AND (taggings.tagger_id IS NULL AND taggings.context = E'tags')) [0m
+  [4;35;1mTagging Load (0.2ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 2 AND "taggings".taggable_type = E'TaxonName' AND (taggings.tagger_id IS NULL AND taggings.context = E'properties')) [0m
+  [4;36;1mTaxonName Destroy (0.1ms)[0m   [0;1mDELETE FROM "taxon_names" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" [0m
+  [4;35;1mTaxonName Load (0.5ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 1) [0m
+  [4;36;1mTaxonName Load (0.7ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 2) [0m
+  [4;35;1mTaxonName Load (0.9ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;36;1mTaxonName Load (1.2ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 4) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mTaxonName Update (0.4ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = 1, "updated_at" = '2010-04-13 13:08:30.250464' WHERE "id" = 3[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTaxonName Load (0.3ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTaxonName Update (0.4ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = 1, "updated_at" = '2010-04-13 13:08:40.207458' WHERE "id" = 4[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 1) [0m
+  [4;35;1mTaxonName Load (1.0ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 1) [0m
+  [4;36;1mTaxonName Load (1.0ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mTaxonName Load (0.5ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 4) [0m
+  [4;36;1mTaxonName Load (0.5ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 4) [0m
+  [4;35;1mTaxonName Load (0.3ms)[0m   [0mSELECT * FROM "taxon_names" [0m
+  [4;36;1mTaxonName Load (0.9ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mTaxonName Update (0.5ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = NULL, "updated_at" = '2010-04-13 13:39:58.161615' WHERE "id" = 4[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTaxonName Load (0.9ms)[0m   [0;1mSELECT * FROM "taxon_names" [0m
+  [4;35;1mTaxonName Load (1.0ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTaxonName Update (0.3ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = NULL, "updated_at" = '2010-04-13 13:43:06.399857' WHERE "id" = 3[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTaxonName Load (0.8ms)[0m   [0;1mSELECT * FROM "taxon_names" [0m
+  [4;35;1mTaxonName Load (0.9ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxonName Update (0.3ms)[0m   [0mUPDATE "taxon_names" SET "basionym_id" = 1, "updated_at" = '2010-04-13 13:44:01.741427' WHERE "id" = 3[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTaxonName Update (0.3ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = 1, "updated_at" = '2010-04-13 13:44:12.749287' WHERE "id" = 4[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTaxonName Load (0.5ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 1) [0m

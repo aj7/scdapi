@@ -501,3 +501,41 @@ Migrating to ActsAsTaggableOnMigration (20100413105209)
   [4;36;1mTaxonName Update (0.3ms)[0m   [0;1mUPDATE "taxon_names" SET "basionym_id" = 1, "updated_at" = '2010-04-13 13:44:12.749287' WHERE "id" = 4[0m
   [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
   [4;36;1mTaxonName Load (0.5ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names".basionym_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTaxonNames (20100412162629)
+Migrating to ActsAsTaggableOnMigration (20100413105209)
+Migrating to CreateNameRelationships (20100413141755)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (11.4ms)[0m   [0;1mCREATE TABLE "name_relationships" ("id" serial primary key, "taxon_name_from_id" integer, "taxon_name_to_id" integer, "date_enforced" timestamp, "is_valid" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413141755')[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCOMMIT[0m
+Migrating to CreateTaxonNameRelationships (20100413141944)
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "taxon_name_relationships" ("id" serial primary key, "taxon_name_id" integer, "name_relationship_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413141944')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTaxonNames (20100412162629)
+Migrating to ActsAsTaggableOnMigration (20100413105209)
+Migrating to CreateNameRelationships (20100413141755)
+Migrating to CreateTaxonNameRelationships (20100413141944)
+Migrating to AddRelationshipTypeToNameRelationship (20100413143106)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mALTER TABLE "name_relationships" ADD COLUMN "relationship_type" character varying(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413143106')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTaxonNames (20100412162629)
+Migrating to ActsAsTaggableOnMigration (20100413105209)
+Migrating to CreateNameRelationships (20100413141755)
+Migrating to CreateTaxonNameRelationships (20100413141944)
+Migrating to AddRelationshipTypeToNameRelationship (20100413143106)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m

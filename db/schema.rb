@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100413105209) do
+ActiveRecord::Schema.define(:version => 20100413143106) do
+
+  create_table "name_relationships", :force => true do |t|
+    t.integer  "taxon_name_from_id"
+    t.integer  "taxon_name_to_id"
+    t.datetime "date_enforced"
+    t.boolean  "is_valid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "relationship_type"
+  end
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
@@ -26,6 +36,13 @@ ActiveRecord::Schema.define(:version => 20100413105209) do
 
   create_table "tags", :force => true do |t|
     t.string "name"
+  end
+
+  create_table "taxon_name_relationships", :force => true do |t|
+    t.integer  "taxon_name_id"
+    t.integer  "name_relationship_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "taxon_names", :force => true do |t|

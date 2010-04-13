@@ -1,0 +1,11 @@
+one:
+  taxon_name_from_id: 1
+  taxon_name_to_id: 1
+  date_enforced: 2010-04-13 15:17:55
+  is_valid: false
+
+two:
+  taxon_name_from_id: 1
+  taxon_name_to_id: 1
+  date_enforced: 2010-04-13 15:17:55
+  is_valid: false

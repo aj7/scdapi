@@ -365,3 +365,28 @@ Migrating to ActsAsTaggableOnMigration (20100413105209)
   [4;35;1mTagging Load (0.9ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 3 AND "taggings".taggable_type = E'TaxonName' AND (taggings.tagger_id IS NULL AND taggings.context = E'properties')) [0m
   [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" IN (9,10)) [0m
   [4;35;1mTag Load (1.1ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName') AND ((taggings.tagger_id IS NULL AND taggings.context = E'properties'))) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTaxonName Load (0.4ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 0) [0m
+  [4;35;1mTaxonName Load (0.5ms)[0m   [0mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;36;1mTaxonName Load (0.6ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;35;1mTag Load (1.9ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (((taggings.context = E'properties' AND taggings.tagger_id IS NULL) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (((taggings.context = E'tags' AND taggings.tagger_id IS NULL) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) [0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName') AND ((taggings.tagger_id IS NULL AND taggings.context = E'tags'))) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (((taggings.context = E'newgroup' AND taggings.tagger_id IS NULL) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTaxonName Load (0.6ms)[0m   [0;1mSELECT * FROM "taxon_names" WHERE ("taxon_names"."id" = 3) [0m
+  [4;35;1mTag Load (1.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName') AND ((taggings.tagger_id IS NULL AND taggings.context = E'tags'))) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (((taggings.context = E'all' AND taggings.tagger_id IS NULL) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (((taggings.context = E'newgroup' AND taggings.tagger_id IS NULL) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) [0m
+  [4;36;1mTagging Load (1.0ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 3 AND "taggings".taggable_type = E'TaxonName' AND (taggings.tagger_id IS NULL AND taggings.context = E'tags')) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" IN (1,2)) [0m
+  [4;36;1mTag Load (9.7ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (((taggings.context = E'tags' AND taggings.tagger_id IS NULL) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) [0m
+  [4;35;1mTag Load (1.0ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (((taggings.context = E'properties' AND taggings.tagger_id IS NULL) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) AND (("taggings".taggable_id = 3) AND ("taggings".taggable_type = E'TaxonName'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTaxonNames (20100412162629)
+Migrating to ActsAsTaggableOnMigration (20100413105209)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
